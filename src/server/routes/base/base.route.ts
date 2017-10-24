@@ -1,9 +1,10 @@
-import { Router, Request, Response } from 'express';
-
+import { Router, Request, Response, Application } from 'express';
 const router = Router();
 
 router.get('/', ( req: Request, res: Response ) => {
-  res.send('ok');
+  res.render('index');
 });
 
-export default router;
+export default function (app: Application) {
+  app.use('/', router);
+}

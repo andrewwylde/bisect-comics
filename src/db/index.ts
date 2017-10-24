@@ -13,12 +13,12 @@ function errorHandler( error: NodeJS.ErrnoException ) {
 
 pool.on( 'error', errorHandler );
 
-export const query = async function (text: string, values: string[], callback: (err: Error, result: QueryResult) => void ) {
-  return await pool.query( text, values, callback );
+export const query = async function (text: string, values: string[] ) {
+  return await pool.query( text, values );
 };
 
 // the pool also supports checking out a client for
 // multiple operations, such as a transaction
-export const connect = async function ( callback: ( err: NodeJS.ErrnoException ) => void ) {
-  return await pool.connect( callback );
+export const connect = async function () {
+  return await pool.connect();
 };
