@@ -24,6 +24,7 @@
   "homepage": "https://github.com/astoellis/bisect-comics#readme",
   "dependencies": {
     "@types/pg": "^7.1.4",
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "helmet": "^3.9.0"
   }
 }
