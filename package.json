@@ -15,6 +15,15 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/astoellis/bisect-comics/issues"
+  "devDependencies": {
+    "@types/cheerio": "^0.22.3",
+    "@types/express": "^4.0.37",
+    "@types/node": "8.0.46",
+    "pg": "^7.3.0"
   },
-  "homepage": "https://github.com/astoellis/bisect-comics#readme"
+  "homepage": "https://github.com/astoellis/bisect-comics#readme",
+  "dependencies": {
+    "@types/pg": "^7.1.4",
+    "express": "^4.16.2"
+  }
 }
