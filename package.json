@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc --watch -p tsconfig.json",
     "dev": "./node_modules/.bin/nodemon dist/src --watch dist/ -e js,hbs",
     "copy-views": "cp -R ./src/server/views ./dist/src/server"
   },
@@ -17,6 +18,7 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/astoellis/bisect-comics/issues"
+  },
   "devDependencies": {
     "@types/body-parser": "1.16.6",
     "@types/cheerio": "0.22.3",
